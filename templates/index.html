@@ -17,7 +17,7 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <!--banner-->
-  <section id="banner" class="banner">
+  <section id="ban" class="banner">
     <div class="bg-color">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -77,34 +77,37 @@
           <div class="service-info">
               <div class="icon-info">
                   
-                <h4>Little interest or pleasure in doing things</h4>
+                <h4>How would you describe your mood?</h4>
                 <ul class="list-group">
                   <li><div>
                     <input type="radio" id="a10" name="a1" value="0" required="required">
-                    <label for="a10">Not at all.</label>
+                    <label for="a10">Very Happy</label>
                   </div></li>
                   <li><div>
                       <input type="radio" id="a11" name="a1" value="1" required="required">
-                      <label for="a11">Several days.</label>
+                      <label for="a11">Happy.</label>
                   </div></li>
                   </li>
                   <li><div>
                       <input type="radio" id="a12" name="a1" value="2" required="required">
-                      <label for="a12">More than half the days.</label>
+                      <label for="a12">Neutral.</label>
                   </div></li>
                   <li><div>
                       <input type="radio" id="a13" name="a1" value="3" required="required">
-                      <label for="a13">Nearly every day.</label>
+                      <label for="a13">Sad.</label>
                   </div></li>
+                    <li><div>
+                        <input type="radio" id="a14" name="a4" value="4" required="required">
+                        <label for="a14">Extreemely sad.</label>
+                    </div></li>
                 </ul>
-              
               </div>
             </div>
   
             <div class="service-info">
               <div class="icon-info">
                   
-                <h4>Feeling down, depressed, or hopeless</h4>
+                <h4>Are you experiencing any physical symptoms of distress </h4>
                 <ul class="list-group">
                     <li><div>
                       <input type="radio" id="a20" name="a2" value="0" required="required">
@@ -112,7 +115,7 @@
                     </div></li>
                     <li><div>
                         <input type="radio" id="a21" name="a2" value="1"  required="required">
-                        <label for="a21">Several days.</label>
+                        <label for="a21">Some days.</label>
                     </div></li>
                     </li>
                     <li><div>
@@ -121,8 +124,13 @@
                     </div></li>
                     <li><div>
                         <input type="radio" id="a23" name="a2" value="3" required="required">
-                        <label for="a23">Nearly every day.</label>
+                        <label for="a23">Nearly all the day.</label>
                     </div></li>
+                    <li><div>
+                        <input type="radio" id="a14" name="a4" value="4" required="required">
+                        <label for="a14">Mostly all the time.</label>
+                    </div></li>
+
                   </ul>
                    
               </div>
@@ -130,7 +138,7 @@
 
             <div class="service-info">
                 <div class="icon-info">
-                  <h4>Trouble falling or staying asleep, or sleeping too much</h4>
+                  <h4>How would you rate your stress level</h4>
                   
                     <ul class="list-group">
                       <li><div>
@@ -357,6 +365,25 @@
     </div>
   </section>
 </form>
+  <script>
+      (function (w, d, s, o, f, js, fjs) {
+        w["botsonic_widget"] = o;
+        w[o] =
+          w[o] ||
+          function () {
+            (w[o].q = w[o].q || []).push(arguments);
+          };
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.id = o;
+        js.src = f;
+        js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+      })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+      Botsonic("init", {
+        serviceBaseUrl: "https://api.botsonic.ai",
+        token: "c694f71d-9c2b-4899-9b07-93d083ea4576",
+      });
+  </script>
   <!--/ service-->
 
 

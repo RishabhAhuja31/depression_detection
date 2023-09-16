@@ -141,7 +141,7 @@ banner
     background-color: rgba(12, 184, 182) !important;
 }
 #banner{
-	background: url('../img/bg-banner.jpg') no-repeat fixed;
+
 	background-size: cover;
 	min-height: 650px;
 	position: relative;
@@ -152,7 +152,7 @@ banner
   }
 }
 .bg-color{
-	background-color: RGBA(13, 70, 83, 0.78);
+	background-color: rgba(137, 177, 186, 1);
 	min-height: 650px;
 }
 .banner-info{
